@@ -28,6 +28,8 @@ export default class LoginCtrl extends Controller {
         if (err) return this.handleError(err);
         this.$state.go('confirmation', { phone: this.phone });
       });
+
+      this.$state.go('confirmation', { phone: this.phone });
     });
   }
 
